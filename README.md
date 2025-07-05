@@ -203,3 +203,12 @@ from [dbo].[KMS Sql Case Study]
 
 ![Screenshot (1)](https://github.com/user-attachments/assets/8c32044f-3768-4776-bc52-1c479a1adfa9)
 ![Screenshot (9)](https://github.com/user-attachments/assets/c7cb8557-13b2-489c-966e-f9f45b8c8011)
+![Screenshot (12)](https://github.com/user-attachments/assets/77eaed6a-8840-45b8-8ed4-2f5bdeeea1a8)
+![Screenshot (11)](https://github.com/user-attachments/assets/dc424304-c288-4651-b003-e7b7d887ab8c)
+![Screenshot (4)](https://github.com/user-attachments/assets/897c4a89-9499-426f-a98f-512411c8e362)
+![Screenshot (5)](https://github.com/user-attachments/assets/8ad07f09-0c1d-4c28-9d6c-726d8cf77f15)
+![Screenshot (14)](https://github.com/user-attachments/assets/b4054710-dd36-48d9-a736-3cc222def7d3)
+![Screenshot (7)](https://github.com/user-attachments/assets/d4147288-a5cc-4157-a013-3dc87fb7020e)
+![Screenshot (15)](https://github.com/user-attachments/assets/5fbe97a8-a714-4be0-a8d8-071fefeb6bd6)
+![Screenshot (6)](https://github.com/user-attachments/assets/470492bc-ac08-49b1-af1a-4e1a7a68175f)
+![Screenshot (8)](https://github.com/user-attachments/assets/046ebd67-e731-46eb-9576-d9694c6ea4c6)
