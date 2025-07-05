@@ -201,3 +201,4 @@ from [dbo].[KMS Sql Case Study]
   order by Order_Priority,Ship_Mode desc
 ```
 
+![Screenshot (1)](https://github.com/user-attachments/assets/8c32044f-3768-4776-bc52-1c479a1adfa9)
