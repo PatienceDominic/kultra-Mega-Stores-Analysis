@@ -202,3 +202,4 @@ from [dbo].[KMS Sql Case Study]
 ```
 
 ![Screenshot (1)](https://github.com/user-attachments/assets/8c32044f-3768-4776-bc52-1c479a1adfa9)
+![Screenshot (9)](https://github.com/user-attachments/assets/c7cb8557-13b2-489c-966e-f9f45b8c8011)
