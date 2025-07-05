@@ -91,3 +91,88 @@ total_purchased
  KMS.Product_Name, KMS.Product_Category
  order by total_purchased desc
 ```
+
+ ------QUESTION 7
+ ------ Which small business customer had the highest sales?
+``` SQL
+ select top 1
+	Customer_Name,
+	sum(Sales) AS highest_sales
+from
+	[dbo].[KMS Sql Case Study]
+where
+	Customer_Segment = 'Small Business'
+group by Customer_Name
+order by highest_sales desc
+```
+
+-------QUESTION 8
+-------Which corporate customer placed the most number of orders in 2009-2012?
+
+``` SQL
+select top 1
+	Customer_Name,
+	count(distinct Order_ID) AS Total_Orders
+from
+	[dbo].[KMS Sql Case Study]
+where
+	Customer_Segment = 'Corporate'
+	AND Order_Date BETWEEN '2012-01-01' AND '2019-01-01'
+group by
+	Customer_Name
+order by
+	Total_Orders desc
+```
+
+-------QUESTION 9-----
+------Which consumer customer was the most profitable one?
+
+```SQL
+select top 1
+	Customer_Name,
+round(sum(Profit),2) AS total_profit
+from
+	[dbo].[KMS Sql Case Study]
+where
+	Customer_Segment = 'Consumer'
+group by
+	Customer_Name
+order by
+	total_profit desc
+```
+
+------ QUESTION 10
+ ------ Which customers returned items and what segment do they belong to?
+
+ ```SQL
+select
+	KMS.Customer_Name,
+	KMS.Customer_Segment
+from
+	[dbo].[KMS Sql Case Study] AS KMS
+join
+	Order_Status AS os 
+	on KMS.Order_ID = os.Order_ID
+where
+	os.Status = 'Returned'
+```
+
+
+	------QUESTION 11
+	-------If the delivery truck is the most economical but the slowest shipping method and Express Air is the fastest but the most expensive one, do
+	----you think the company appropriately spent shipping costs based on the Order Priority? Explain your answer.
+ 
+ ```SQL
+select
+	Order_Priority,
+	Ship_Mode,
+	count(Order_ID) AS
+Order_Count,
+	round(sum(Sales - Profit),2) AS
+	Estimated_Shipping_Cost,
+	avg(datediff(day, Order_Date, Ship_Date)) AS avg_Ship_days
+from [dbo].[KMS Sql Case Study]
+  group by Order_Priority,Ship_Mode
+  order by Order_Priority,Ship_Mode desc
+```
+
