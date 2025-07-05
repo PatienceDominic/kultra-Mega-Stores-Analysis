@@ -72,6 +72,10 @@ from
 group by Customer_Name
 order by total_sales asc```
 
+My advice to the management: The management has to increase revenue coming from customers like Jeremy Farry, Natahlie Decherney and others considering targeted approach focusing on engagement and value proposition
+ The management can send  messages or emails to individuals, offer discount on their next purchase in order to entice them.
+ carry out a survey reaching out to these customers with low purchase to know their reasons for low purchase. understanding the 'why' their low spending and offering, then KMS can convert these customers to more vslusble customers.
+
 --------QUESTION 5
 --------KMS incured the most shipping cost using which shipping method?
 
@@ -200,6 +204,10 @@ from [dbo].[KMS Sql Case Study]
   group by Order_Priority,Ship_Mode
   order by Order_Priority,Ship_Mode desc
 ```
+Express Air was used even for low-priority orders, increasing costs.
+
+Delivery Truck was underutilized for low-priority shipments.
+
 
 ![Screenshot (1)](https://github.com/user-attachments/assets/8c32044f-3768-4776-bc52-1c479a1adfa9)
 ![Screenshot (9)](https://github.com/user-attachments/assets/c7cb8557-13b2-489c-966e-f9f45b8c8011)
@@ -212,3 +220,22 @@ from [dbo].[KMS Sql Case Study]
 ![Screenshot (15)](https://github.com/user-attachments/assets/5fbe97a8-a714-4be0-a8d8-071fefeb6bd6)
 ![Screenshot (6)](https://github.com/user-attachments/assets/470492bc-ac08-49b1-af1a-4e1a7a68175f)
 ![Screenshot (8)](https://github.com/user-attachments/assets/046ebd67-e731-46eb-9576-d9694c6ea4c6)
+
+Recommendation:
+
+- KMS has to enforce Shipping Policy based on Order Priority
+
+- Automate shipping method selection using business rules
+
+- Reserve Express Air for Critical or High priority orders
+
+- Use Delivery Truck for Low or Medium priority to reduce cost
+
+ Conclusion
+- By analyzing customer behavior, product performance, and shipping trends, KMS can:
+
+- Focus on high-performing regions and customers
+
+- Optimize shipping costs through smarter logistics
+
+- Boost revenue via customer segmentation strategies
