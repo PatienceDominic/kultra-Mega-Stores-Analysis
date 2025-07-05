@@ -1,5 +1,30 @@
-# kultra-Mega-Stores-Analysis
-Sales and other data analysis for Kultra Mega Stores, identifying trends and key metrics.
+# PROJECCT TOPIC
+kultra-Mega-Stores-Analysis
+ 
+## PROJEC OVERVIEW
+This project involves analyzing historical sales data for Kultra Mega Stores (KMS), a Lagos-based supplier of office supplies and furniture. The analysis focuses on the Abuja division, using order data from the year 2009 to 2012 to uncover trends, performance metrics, and strategic insight.
+
+## DATA SOURCE
+Internal order dataset shared by KMS Business Manager (Excel file containing orders from 2009–2012 for Abuja division)
+
+## TOOL USED
+SQL for querrying the data to uncover trends and performance metrics
+
+## DATA CLEANING AND PREPARATION
+In this aspect the data was loaded and inspected, handling missing data and formating.
+
+## Exploratory Data Analysis 
+ This involves exploring the data to answer questions like
+  - Which product category had the highest sales?
+  - What are the top 3 and bottom 3 regions in terms of sales?
+  -  What were the total sales of appliance in ontario?
+  -  KMS incured the most shipping cost using which shipping method?
+  -   Who are the most valuable customers, and what products or services do they typically purchase?
+  -   Which corporate customer placed the most number of orders in 2009-2012?
+  -    Which customers returned items and what segment do they belong to?
+
+
+## DATA ANALYSIS	
 
 ---- QUESTION 1
 ----- Which product category had the highest sales?
