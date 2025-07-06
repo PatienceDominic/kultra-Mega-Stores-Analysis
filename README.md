@@ -32,7 +32,12 @@ In this aspect the data was loaded and inspected, handling missing data and form
 ``` SQL
 select max(Product_Category) AS highest_sales
 from [dbo].[KMS Sql Case Study]
+
+**Technology**
 ```
+
+Insight...... The product_category with the highest sales is technology
+
 ------QUESTION 2
 ------ What are the top 3 and bottom 3 regions in terms of sales?
 	
@@ -50,6 +55,23 @@ from [dbo].[KMS Sql Case Study]
 	order by sum(sales) asc
  ```
 
+```sql
+Top 3 region in terms of sales
+| Region   | Sales (in units)    |
+|----------|---------------------|
+| West     | 3,597,549.27        |
+| Ontario  | 3,063,212.48        |
+| Prarie   | 2,837,304.61        |
+
+Botttom 3 regions in terms of sales
+| Region                | Sales (in units)    |
+|------------------------|---------------------|
+| Nunavut               | 116,376.48          |
+| Northwest Territories | 800,847.33          |
+| Yukon                 | 975,867.38          |
+
+```
+
 ------QUESTION 3
 ------- What were the total sales of appliance in ontario
  
@@ -58,7 +80,13 @@ select Region, round(sum(sales),2) AS total_sales_of_appliances
  from [dbo].[KMS Sql Case Study]
  where Product_Sub_Category = 'Appliances'
  and Province = 'Ontario'
- group by Region ```
+ group by Region
+
+Ontario — $202,346.84
+
+The 'Appliance' category in the 'Ontario' region generated a total of $202,346.84 
+
+```
 
  -----QUESTION 4----
  ------Advice the managament of KMS on what to do to increase the revenue from the bottom 10 customers
@@ -70,7 +98,24 @@ select top 10
 from
 [dbo].[KMS Sql Case Study]
 group by Customer_Name
-order by total_sales asc```
+order by total_sales asc
+
+ Top 10 Customers by Total Sales (Ascending Order)
+
+| Rank | Customer Name        | Total Sales ($)     |
+|------|----------------------|----------------------|
+| 1    | Jeremy Farry         | 85.72                |
+| 2    | Natalie DeCherney    | 125.90               |
+| 3    | Nicole Fjeld         | 153.03               |
+| 4    | Katrina Edelman      | 180.76               |
+| 5    | Dorothy Dickinson    | 198.08               |
+| 6    | Christine Kargatis   | 293.22               |
+| 7    | Eric Murdock         | 343.33               |
+| 8    | Chris McAfee         | 350.18               |
+| 9    | Rick Huthwaite       | 415.82               |
+| 10   | Mark Hamilton        | 450.99               |
+
+```
 
 My advice to the management: The management has to increase revenue coming from customers like Jeremy Farry, Natahlie Decherney and others considering targeted approach focusing on engagement and value proposition
  The management can send  messages or emails to individuals, offer discount on their next purchase in order to entice them.
@@ -88,6 +133,16 @@ from
 [dbo].[KMS Sql Case Study]
 group by Ship_Mode
 order by total_shipping_cost desc
+
+ Shipping Method with the Highest Total Cost
+
+| Shipping Method | Total Shipping Cost ($) |
+|------------------|--------------------------|
+| Delivery Truck   | 51,971.94                |
+
+Insight  
+KMS incurred the most shipping cost using the Delivery Truck shipping method.
+
 ```
 
 ------QUESTION 6
