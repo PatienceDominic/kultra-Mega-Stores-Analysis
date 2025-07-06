@@ -188,6 +188,15 @@ where
 	Customer_Segment = 'Small Business'
 group by Customer_Name
 order by highest_sales desc
+
+ Top Small Business Customer by Sales
+
+| Customer Name | Total Sales ($)   |
+|----------------|-------------------|
+| Dennis Kane    | 75,967.59         |
+
+Insight:  
+Among small business customers, Dennis Kane generated the highest total sales.
 ```
 
 -------QUESTION 8
@@ -206,6 +215,16 @@ group by
 	Customer_Name
 order by
 	Total_Orders desc
+
+### Top Corporate Customer by Number of Orders (2009–2012)
+
+| Customer Name | Number of Orders |
+|----------------|------------------|
+| Roy Skaria     | 8                |
+
+Insight:  
+Between '2009 and 2012', Roy Skaria placed the highest number of orders among corporate customers, totaling 8 orders.
+
 ```
 
 -------QUESTION 9-----
@@ -223,6 +242,16 @@ group by
 	Customer_Name
 order by
 	total_profit desc
+
+### Most Profitable Consumer Customer
+
+| Customer Name | Total Profit ($) |
+|----------------|------------------|
+| Emily Phan     | 34,005.44        |
+
+Insight:  
+'Emily Phan' was the most profitable customer in the Consumer segment, generating $34,005.44 in profit.
+
 ```
 
 ------ QUESTION 10
@@ -258,11 +287,46 @@ Order_Count,
 from [dbo].[KMS Sql Case Study]
   group by Order_Priority,Ship_Mode
   order by Order_Priority,Ship_Mode desc
+
+Analysis: Was Shipping Cost Appropriately Spent Based on Order Priority?
+
+| Order Priority  | Shipping Method  | Number of Orders | Shipping Cost ($) | Priority Level |
+|------------------|------------------|------------------|--------------------|----------------|
+| Critical         | Delivery Truck   | 228              | 1,218,333.85       | 1 (Highest)    |
+| Critical         | Regular Air      | 1180             | 1,118,847.32       | 1              |
+| Critical         | Express Air      | 200              |   197,985.04       | 1              |
+| High             | Delivery Truck   | 248              | 1,338,507.99       | 1              |
+| High             | Regular Air      | 1308             | 1,306,958.06       | 1              |
+| High             | Express Air      | 212              |   201,587.18       | 1              |
+| Medium           | Delivery Truck   | 205              |   969,386.53       | 1              |
+| Medium           | Regular Air      | 1225             | 1,260,247.42       | 1              |
+| Medium           | Express Air      | 201              |   244,815.39       | 1              |
+| Low              | Delivery Truck   | 250              | 1,313,686.18       | 3              |
+| Low              | Regular Air      | 1280             | 1,360,358.02       | 4 (Lowest)     |
+| Low              | Express Air      | 190              |   190,542.17       | 4              |
+| Not Specified    | Delivery Truck   | 215              | 1,080,831.59       | 1              |
+| Not Specified    | Regular Air      | 1277             | 1,257,789.80       | 1              |
+| Not Specified    | Express Air      | 180              |   194,378.26       | 1              |
+
+ Recommendation:
+
+To improve cost-efficiency:
+- Restrict Express Air to Critical orders only.
+- Use Delivery Truck or Regular Air for Low priority orders to reduce cost.
+- Implement automated shipping selection rules based on priority levels.
+With this KMS would optimize shipping costs without compromising service quality.
+
+ Conclusion:
+
+ _I will say that the company did not fully align shipping choices with order priority:
+
+- Critical and High Priority Orders: These received an appropriate mix of faster (Express Air and Regular Air) and economical (Delivery Truck) methods. The presence of Express Air for Critical orders suggests good responsiveness.
+
+- Low Priority Orders: These still had significant spending on Regular Air ($1.36M) and Delivery Truck ($1.31M), and even some Express Air ($190K)—which contradicts the need for economy over speed.
+
+- Medium and Not Specified Priorities: These had consistent spending across all shipping methods, including costly options like Express Air, suggesting a lack of stricter prioritization.
+
 ```
-Express Air was used even for low-priority orders, increasing costs.
-
-Delivery Truck was underutilized for low-priority shipments.
-
 
 ![Screenshot (1)](https://github.com/user-attachments/assets/8c32044f-3768-4776-bc52-1c479a1adfa9)
 ![Screenshot (9)](https://github.com/user-attachments/assets/c7cb8557-13b2-489c-966e-f9f45b8c8011)
