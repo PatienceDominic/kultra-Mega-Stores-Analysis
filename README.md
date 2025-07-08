@@ -309,17 +309,7 @@ Analysis: Was Shipping Cost Appropriately Spent Based on Order Priority?
 | Not Specified    | Regular Air      | 1277             | 1,257,789.80       | 1              |
 | Not Specified    | Express Air      | 180              |   194,378.26       | 1              |
 
- Recommendation:
-
-To improve cost-efficiency:
-- Restrict Express Air to Critical orders only.
-- Use Delivery Truck or Regular Air for Low priority orders to reduce cost.
-- Implement automated shipping selection rules based on priority levels.
-With this KMS would optimize shipping costs without compromising service quality.
-
- Conclusion:
-
- _I will say that the company did not fully align shipping choices with order priority:
+_I will say that the company did not fully align shipping choices with order priority:
 
 - Critical and High Priority Orders: These received an appropriate mix of faster (Express Air and Regular Air) and economical (Delivery Truck) methods. The presence of Express Air for Critical orders suggests good responsiveness.
 
@@ -327,6 +317,14 @@ With this KMS would optimize shipping costs without compromising service quality
 
 - Medium and Not Specified Priorities: These had consistent spending across all shipping methods, including costly options like Express Air, suggesting a lack of stricter prioritization.
 
+
+To improve cost-efficiency:
+- Restrict Express Air to Critical orders only.
+- Use Delivery Truck or Regular Air for Low priority orders to reduce cost.
+- Implement automated shipping selection rules based on priority levels.
+With this KMS would optimize shipping costs without compromising service quality.
+
+ 
 ```
 
 ![Screenshot (1)](https://github.com/user-attachments/assets/8c32044f-3768-4776-bc52-1c479a1adfa9)
