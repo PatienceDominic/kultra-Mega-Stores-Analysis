@@ -8,7 +8,8 @@ This project involves analyzing historical sales data for Kultra Mega Stores (KM
 Internal order dataset shared by KMS Business Manager (Excel file containing orders from 2009–2012 for Abuja division)
 
 ### TOOL USED
-SQL for querrying the data to uncover trends and performance metrics
+Excel for data cleaning and uploading
+SQL Server for querrying the data to uncover trends and performance metrics
 
 ### DATA CLEANING AND PREPARATION
 In this aspect the data was loaded and inspected, handling missing data and formating.
@@ -17,11 +18,11 @@ In this aspect the data was loaded and inspected, handling missing data and form
  This involves exploring the data to answer questions like
   - Which product category had the highest sales?
   - What are the top 3 and bottom 3 regions in terms of sales?
-  -  What were the total sales of appliance in ontario?
-  -  KMS incured the most shipping cost using which shipping method?
-  -   Who are the most valuable customers, and what products or services do they typically purchase?
-  -   Which corporate customer placed the most number of orders in 2009-2012?
-  -    Which customers returned items and what segment do they belong to?
+  - What were the total sales of appliance in ontario?
+  - KMS incured the most shipping cost using which shipping method?
+  - Who are the most valuable customers, and what products or services do they typically purchase?
+  - Which corporate customer placed the most number of orders in 2009-2012?
+  - Which customers returned items and what segment do they belong to?
 
 
 ### DATA ANALYSIS	
