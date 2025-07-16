@@ -1,7 +1,7 @@
-# PROJECCT TOPIC
+# PROJECT TOPIC
 kultra-Mega-Stores-Analysis
  
-### PROJEC OVERVIEW
+### PROJECT OVERVIEW
 This project involves analyzing historical sales data for Kultra Mega Stores (KMS), a Lagos-based supplier of office supplies and furniture. The analysis focuses on the Abuja division, using order data from the year 2009 to 2012 to uncover trends, performance metrics, and strategic insight.
 
 ### DATA SOURCE
