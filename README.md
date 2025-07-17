@@ -36,6 +36,7 @@ from [dbo].[KMS Sql Case Study]
 
 **Technology**
 ```
+https://github.com/PatienceDominic/kultra-Mega-Stores-Analysis/blob/main/Screenshot%20(1).png
 
 Insight...... The product_category with the highest sales is technology
 
