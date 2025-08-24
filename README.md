@@ -358,3 +358,7 @@ Recommendation:
 - Optimize shipping costs through smarter logistics
 
 - Boost revenue via customer segmentation strategies
+
+
+#### Author
+Efut Patience Dominic is a Data Analyst enthusiast with a strong passion for transforming data into meaningful and  actionable insights. Always eager to explore data driven solutions, leveraging analytical tools and techniques to uncover trends, support decision making and drive impactful outcomes. 
