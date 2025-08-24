@@ -275,7 +275,7 @@ where
 
 	------QUESTION 11
 	-------If the delivery truck is the most economical but the slowest shipping method and Express Air is the fastest but the most expensive one, do
-	----you think the company appropriately spent shipping costs based on the Order Priority? Explain your answer.
+	you think the company appropriately spent shipping costs based on the Order Priority? Explain your answer.
  
  ```SQL
 select
@@ -310,7 +310,7 @@ Analysis: Was Shipping Cost Appropriately Spent Based on Order Priority?
 | Not Specified    | Regular Air      | 1277             | 1,257,789.80       | 1              |
 | Not Specified    | Express Air      | 180              |   194,378.26       | 1              |
 
-_I will say that the company did not fully align shipping choices with order priority:
+- I will say that the company did not fully align shipping choices with order priority:
 
 - Critical and High Priority Orders: These received an appropriate mix of faster (Express Air and Regular Air) and economical (Delivery Truck) methods. The presence of Express Air for Critical orders suggests good responsiveness.
 
